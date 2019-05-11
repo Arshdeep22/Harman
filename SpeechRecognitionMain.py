@@ -186,19 +186,19 @@ def WebsiteLogin(Word):
         if Word == "facebook":
             assert "Facebook" in driver.title
             #driver.get_screenshot_as_file("D:\\facebook.png")
-            driver.find_element_by_id("email").send_keys("arshdeep.sekhon.16")
-            driver.find_element_by_id("pass").send_keys("9056343865")
+            driver.find_element_by_id("email").send_keys("ID")
+            driver.find_element_by_id("pass").send_keys("Password")
             driver.find_element_by_id("loginbutton").click()
             #driver.get_screenshot_as_file("D:\\facebook1.png")
         
         if Word == "gmail":
             assert "Gmail" in driver.title
             #driver.get_screenshot_as_file("D:\\Gmail.png")
-            driver.find_element_by_id("identifierId").send_keys("arshdeep.sekhon16@gmail.com")
+            driver.find_element_by_id("identifierId").send_keys("ID")
             driver.find_element_by_id("identifierNext").click()
             time.sleep(2)
             elem = driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[1]/div/form/content/section/div/content/div[1]/div/div[1]/div/div[1]/input")
-            elem.send_keys("9855481785")
+            elem.send_keys("Password")
             driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/content/span").click()
             #driver.get_screenshot_as_file("D:\\Gmail.png")
     except:
